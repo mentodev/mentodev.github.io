@@ -14,9 +14,13 @@ signupButton.onclick = e => {
   const valid = isValidEmail(input);
 
   if (!valid) {
+    const errorMessage =
+      input.length === 0
+        ? "Is it just me or is it empty?"
+        : "Email looks invalid";
     signupButton.style.backgroundColor = "rgb(255, 123, 123)";
     signupButton.style.color = "#333";
-    signupButton.innerText = "Email looks invalid";
+    signupButton.innerText = errorMessage;
     setTimeout(() => {
       signupButton.style.backgroundColor = "#e6f3f4";
       signupButton.style.color = "#436770";
