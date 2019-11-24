@@ -1,0 +1,14 @@
+tags
+.DS_Store
+
+buid
+dist
+.cache
+target
+node_modules
+
+*.db
+*.zip
+*.log
+
+.parcel-cache

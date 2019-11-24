@@ -1,0 +1,15 @@
+{
+  "name": "mento",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "keywords": [],
+  "author": "Abin Simon <abinsimon10@gmail.com> (meain.io)",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.0.0-alpha.3.1"
+  }
+}
