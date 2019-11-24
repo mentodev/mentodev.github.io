@@ -11,6 +11,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+/* @media only screen and (max-width: 600px) { */
+/*   body { */
+/*     overflow: auto; */
+/*   } */
+/* } */
 
 .header-links {
   background-color: #e5f6d8;
@@ -38,7 +43,7 @@ body {
 }
 .header {
   background-color: #e5f6d8;
-  width: 100vw;
+  width: 100%;
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -79,7 +84,7 @@ body {
 }
 
 .signup {
-  width: 100vw;
+  width: 100%;
   display: flex;
   max-width: 800px;
   margin-top: -20px;
@@ -138,8 +143,11 @@ body {
   flex: 1;
   /* border: 1px solid rgba(221, 221, 221, 0.3); */
   /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0px 2px rgba(0, 0, 0, 0.24); */
-  margin: 20px;
+  margin: 10px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   /* justify-content: center; */
   /* align-items: center; */
   min-width: 300px;
@@ -164,9 +172,15 @@ body {
 .card-header svg path {
   /* fill: #e8f4da; */
 }
+.card p {
+  max-width: 400px;
+}
 
 @media only screen and (max-width: 1000px) {
   .cards {
     flex-direction: column;
+  }
+  .card p {
+    text-align: center;
   }
 }
