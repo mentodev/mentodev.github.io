@@ -4,12 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "Abin Simon <abinsimon10@gmail.com> (meain.io)",
   "license": "MIT",
   "devDependencies": {
-    "parcel": "^2.0.0-alpha.3.1"
+    "gh-pages": "^2.1.1"
+  },
+  "dependencies": {
+    "parcel": "^1.12.4"
   }
 }
