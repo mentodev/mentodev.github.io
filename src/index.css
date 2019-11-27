@@ -76,6 +76,8 @@ header > h4 {
   font-family: "Roboto Mono";
   border-radius: 5px;
   font-size: 0.7rem;
+  cursor:pointer;
+  text-decoration: none;
 }
 
 .banner-image {
