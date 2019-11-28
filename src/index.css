@@ -44,7 +44,7 @@ header > h4 {
   max-width: 1000px;
   display: flex;
   padding: 50px 0;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -86,18 +86,14 @@ header > h4 {
   text-decoration: none;
 }
 
-.banner-image {
-  width: 60%;
-  /* flex: 4; */
+.banner-image img {
+  height: 550px;
 }
-.banner-image img{
-  height: 600px;
+@media only screen and (max-width: 800px) {
+  .banner-image img {
+    height: 400px;
+  }
 }
-/* @media only screen and (max-width: 1000px) { */
-/*   .banner-image { */
-/*     width: 30%; */
-/*   } */
-/* } */
 
 .content {
   display: flex;
