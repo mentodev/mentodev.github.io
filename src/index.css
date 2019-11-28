@@ -72,6 +72,7 @@ header > h4 {
 .banner-p {
   color: #8a8a8a;
   font-size: 0.9rem;
+  line-height: 1.5;
 }
 .signup {
   background-color: #2a8ff7;
@@ -151,6 +152,7 @@ header > h4 {
 .card-content {
   color: #8a8a8a;
   font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 .non-footer {
