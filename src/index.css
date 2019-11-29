@@ -1,10 +1,16 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --body-font: "Space Mono", monospace;
+  --logo-font: "Pacifico", cursive;
+}
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto Mono", monospace;
+  /* font-family: "Roboto Mono", monospace; */
+  /* font-family: "Nanum Gothic Coding", monospace; */
+  font-family: var(--body-font);
   height: 100%;
   position: relative;
 }
@@ -18,22 +24,35 @@ body {
 }
 
 header {
-  font-family: "Pacifico", cursive;
+  font-family: var(--logo-font);
   margin: 10px 0;
   width: 100%;
   max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 header > h4 {
   font-weight: normal;
   font-size: 3rem;
   margin: 0;
-  width: 100%;
-  max-width: 1000px;
-  padding: 0 55px;
+  /* width: 100%; */
+  /* max-width: 1000px; */
+  /* padding: 0 55px; */
+}
+.links a {
+  color: #748d95;
+  text-decoration: none;
+  margin: 5px 10px;
+  /* font-size: 0.7rem; */
+  text-transform: uppercase;
+  font-family: var(--body-font);
+  font-weight: 400;
 }
 @media only screen and (max-width: 700px) {
-  header > h4 {
-    text-align: center;
+  header {
+    flex-direction: column;
+    justify-content: center;
   }
   .banner-image {
     display: none;
@@ -73,6 +92,7 @@ header > h4 {
   margin-top: 15px;
   line-height: 1.2;
   font-size: 1.6em;
+  font-weight: 300;
 }
 .banner-p {
   color: #8a8a8a;
@@ -82,16 +102,20 @@ header > h4 {
   margin-bottom: 23px;
 }
 .signup {
-  background-color: #2a8ff7;
+  background-color: #3797fb;
   outline: none;
   border: none;
-  padding: 8px 50px;
+  padding: 10px 50px;
   color: #fff;
-  font-family: "Roboto Mono";
+  font-family: var(--body-font);
   border-radius: 5px;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   cursor: pointer;
   text-decoration: none;
+}
+.signup:hover {
+  background-color: hsl(212, 94%, 50%);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 0px 2px rgba(0, 0, 0, 0.24);
 }
 
 .banner-image img {
@@ -113,6 +137,8 @@ header > h4 {
 
 .content-title {
   margin-bottom: 0;
+  font-weight: normal;
+  font-size: 1.3rem;
 }
 
 .content-content {
@@ -154,6 +180,7 @@ header > h4 {
 .card-header {
   display: flex;
   margin-bottom: 10px;
+  align-items: center;
 }
 @media only screen and (max-width: 1200px) {
   .content-cards {
@@ -166,8 +193,11 @@ header > h4 {
   }
 }
 .card-header svg {
-  margin-right: 10px;
-  fill: #6c98cb;
+  margin-right: 13px;
+  fill: #fff;
+  background-color: #93bce6;
+  padding: 5px;
+  border-radius: 50%;
 }
 .card-header-title {
   font-weight: bold;
@@ -207,4 +237,5 @@ footer a {
   text-decoration: none;
   font-size: 0.7rem;
   text-transform: uppercase;
+  font-family: var(--body-font);
 }
