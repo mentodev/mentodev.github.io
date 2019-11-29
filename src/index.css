@@ -73,17 +73,19 @@ header > h4 {
   flex-direction: column;
   flex-flow: wrap;
 }
-@media only screen and (max-width: 700px) {
-  .banner-content {
-    width: 100%;
-  }
-}
 .beta-notice {
   background-color: #5ecd76;
   color: #cfffd9;
   border-radius: 5px;
   padding: 3px 10px;
   font-size: 0.8rem;
+}
+@media only screen and (max-width: 700px) {
+  .banner-content {
+    width: 100%;
+    /* justify-content: center; */
+    /* text-align: center; */
+  }
 }
 .banner-heading {
   margin-top: 15px;
@@ -117,10 +119,12 @@ header > h4 {
 
 .banner-image img {
   height: 550px;
+  margin-left: 50px;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   .banner-image img {
     height: 400px;
+    margin-left: 0;
   }
 }
 
@@ -151,6 +155,7 @@ header > h4 {
   display: flex;
   margin: 50px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .content-card {
   display: flex;
@@ -159,7 +164,6 @@ header > h4 {
   max-width: 320px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 0px 2px rgba(0, 0, 0, 0.14);
   padding: 30px 30px;
-  justify-content: center;
   align-content: center;
   border-radius: 5px;
 }
@@ -179,7 +183,7 @@ header > h4 {
 }
 @media only screen and (max-width: 1200px) {
   .content-cards {
-    flex-direction: column;
+    /* flex-direction: column; */
     text-align: center;
   }
   .card-header {
