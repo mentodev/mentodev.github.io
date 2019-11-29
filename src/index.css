@@ -203,7 +203,7 @@ header > h4 {
   overflow: hidden;
   display: block;
   position: relative;
-  padding-bottom: 50px; /* height of your footer */
+  padding-bottom: 0px; /* height of your footer */
 }
 footer {
   position: absolute;
