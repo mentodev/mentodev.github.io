@@ -191,12 +191,15 @@ header > h4 {
     align-items: center;
   }
 }
-.card-header svg {
+.card-header-image {
   margin-right: 13px;
-  fill: #fff;
   background-color: #85a2bf;
-  padding: 5px;
+  padding: 2px 0;
   border-radius: 50%;
+}
+.card-header-image svg {
+  fill: #fff;
+  height: 13px;
 }
 .card-header-title {
   font-weight: bold;
